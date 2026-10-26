@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Laysh Lab | ليش لاب</title>
+<meta name="description" content="Laysh Lab (ليش لاب): everyday chemistry answered in about 60 seconds, in English with Arabic captions. Written and fact-checked by a working lab chemist, every claim sourced.">
+<link rel="canonical" href="https://layshlab.com/">
+<meta name="theme-color" content="#F5F3EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161A" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Laysh Lab">
+<meta property="og:title" content="Laysh Lab | ليش لاب">
+<meta property="og:description" content="Laysh Lab (ليش لاب): everyday chemistry answered in about 60 seconds, in English with Arabic captions. Written and fact-checked by a working lab chemist, every claim sourced.">
+<meta property="og:url" content="https://layshlab.com/">
+<meta property="og:image" content="https://layshlab.com/icon-512.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&amp;family=Poppins:wght@400;600;700&amp;display=swap">
+<style>
+:root{
+  --ink:#14161A;--surface-dark:#1E2126;--labwhite:#F5F3EE;--orange:#FF6A2B;--teal:#19A69F;
+  --bg:#F5F3EE;--surface:#FFFFFF;--text:#14161A;--muted:#4A4F57;--border:#E2DED5;
+  --link:#0E6F6A;--accent-text:#B83E0C;--chip:#FBE3D8;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#14161A;--surface:#1E2126;--text:#F5F3EE;--muted:#B5B9C0;--border:#2E323A;
+        --link:#19A69F;--accent-text:#FF6A2B;--chip:#2A2420;}
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:400 1rem/1.65 "Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  overflow-wrap:break-word}
+[lang="ar"]{font-family:"Cairo","Poppins",system-ui,sans-serif;line-height:1.8}
+a{color:var(--link);text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--orange);outline-offset:2px;border-radius:6px}
+img{max-width:100%;height:auto;display:block}
+.wrap{width:100%;max-width:960px;margin-inline:auto;padding-inline:16px}
+.skip{position:absolute;inset-inline-start:-999px;top:0;background:var(--orange);color:var(--ink);padding:8px 12px;z-index:10}
+.skip:focus{inset-inline-start:8px;top:8px}
+/* header */
+.site-header{border-bottom:1px solid var(--border);background:var(--bg)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+.brand img{width:40px;height:40px;border-radius:10px;box-shadow:0 0 0 1px var(--border)}
+.brand .en{font-weight:700;font-size:1.15rem;letter-spacing:-.01em}
+.brand .ar{font-family:"Cairo",sans-serif;font-weight:700;color:var(--accent-text);font-size:1.05rem}
+.nav{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.95rem}
+.nav a{text-decoration:none;color:var(--text);padding:6px 2px;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="page"]{border-bottom-color:var(--orange)}
+.nav a[lang="ar"]{font-weight:600}
+/* type */
+h1,h2,h3{line-height:1.25;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(1.9rem,6vw,3rem);font-weight:700}
+h2{font-size:clamp(1.35rem,3.6vw,1.8rem);font-weight:700}
+h3{font-size:1.1rem;font-weight:600}
+[lang="ar"] h1,[lang="ar"] h2,[lang="ar"] h3{letter-spacing:0;line-height:1.45}
+p{margin:0 0 1em}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--link);margin-bottom:.4em}
+[lang="ar"] .eyebrow{letter-spacing:0;font-size:.9rem}
+.muted{color:var(--muted)}
+.hl{color:var(--accent-text)}
+main{display:block}
+section{padding-block:40px}
+section+section{border-top:1px solid var(--border)}
+/* hero */
+.hero{padding-block:48px 40px}
+.hero-grid{display:grid;gap:28px;align-items:center}
+.hero .lead{font-size:1.1rem;color:var(--muted);max-width:38em}
+.hero-ar{margin-top:8px;font-size:1.25rem;font-weight:700;width:fit-content;max-width:100%}
+.hero-mark{display:none;box-shadow:0 10px 30px rgba(20,22,26,.18)}
+@media (min-width:720px){.hero-grid{grid-template-columns:1fr auto}.hero-mark{display:block;width:180px;height:180px;border-radius:40px}}
+/* buttons */
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;
+  font-weight:600;text-decoration:none;border:2px solid var(--orange);color:var(--text);background:transparent}
+.btn.primary{background:var(--orange);color:var(--ink)}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+/* cards */
+.grid{display:grid;gap:14px;grid-template-columns:1fr}
+@media (min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+@media (min-width:960px){.grid.three{grid-template-columns:1fr 1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px}
+.card h3{margin-bottom:.35em}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card .num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--chip);color:var(--accent-text);font-weight:700;font-size:.9rem;margin-bottom:8px}
+.story p{font-size:1.05rem;max-width:40em}
+.story blockquote{margin:0 0 1em;padding-inline-start:16px;border-inline-start:4px solid var(--orange);font-size:1.15rem;font-weight:600}
+/* video list */
+.vlist{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.vlist li{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:space-between;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+.vid{font-weight:700;color:var(--accent-text);font-size:.85rem}
+/* sources page */
+.video{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:20px;margin-bottom:18px;scroll-margin-top:16px}
+.video-head{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-bottom:10px}
+.tag{display:inline-block;font-size:.8rem;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--chip);color:var(--accent-text)}
+.date{font-size:.85rem;color:var(--muted)}
+.titles{display:grid;gap:12px;margin-bottom:12px}
+@media (min-width:720px){.titles{grid-template-columns:1fr 1fr}}
+.titles h2{font-size:1.2rem;margin-bottom:.3em}
+.titles p{font-size:.95rem;color:var(--muted);margin:0}
+.src{margin:0;padding-inline-start:1.2em}
+.src li{margin-bottom:.45em}
+.src .pub{color:var(--muted);font-size:.9rem}
+.url{word-break:break-all;font-size:.8rem;color:var(--muted)}
+.watch{margin-top:12px}
+/* legal */
+.legal{max-width:46em}
+.legal h2{margin-top:1.6em;font-size:1.3rem}
+.legal h3{margin-top:1.2em}
+.legal ul{padding-inline-start:1.3em}
+.legal li{margin-bottom:.4em}
+.note{background:var(--surface);border:1px solid var(--border);border-inline-start:4px solid var(--teal);border-radius:12px;padding:14px 16px;margin:1em 0}
+.ar-box{border-inline-start-color:var(--orange)}
+table{border-collapse:collapse;width:100%;font-size:.92rem;margin:0 0 1em}
+.tscroll{overflow-x:auto}
+th,td{border:1px solid var(--border);padding:8px 10px;text-align:start;vertical-align:top}
+th{background:var(--surface)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.82em;background:var(--chip);padding:1px 5px;border-radius:5px;overflow-wrap:anywhere}
+td code{display:inline-block;margin-bottom:4px}
+.stack th:nth-child(2){width:38%}
+@media (max-width:639px){.stack thead{display:none}.stack,.stack tbody,.stack tr,.stack td{display:block;width:100%}.stack tr{border:1px solid var(--border);border-radius:12px;margin-bottom:12px;background:var(--surface);overflow:hidden}.stack td{border:0;border-bottom:1px solid var(--border)}.stack td:last-child{border-bottom:0}.stack td::before{content:attr(data-label);display:block;font-weight:600;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}}
+.toc{columns:1;padding-inline-start:1.2em}
+@media (min-width:640px){.toc{columns:2}}
+/* footer */
+.site-footer{border-top:1px solid var(--border);padding-block:28px 40px;font-size:.92rem;color:var(--muted)}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:10px}
+.foot-links a{color:var(--text);font-weight:600}
+.site-footer p{margin:.3em 0}
+/* 404 */
+.center{text-align:center;padding-block:72px}
+.center img{margin:0 auto 20px;width:110px;height:110px;border-radius:26px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap bar">
+<a class="brand" href="/" aria-label="Laysh Lab home">
+<img src="/logo-mark.png" alt="" width="40" height="40">
+<span class="en">Laysh Lab</span><span class="ar" lang="ar" dir="rtl">ليش لاب</span>
+</a>
+<nav class="nav" aria-label="Main"><a href="/" aria-current="page">Home</a><a href="/sources.html">Sources</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/#ar" lang="ar" dir="rtl">العربية</a></nav>
+</div>
+</header>
+<main id="main">
+<!-- ASSUMPTION: the brand story is the owner-draft from our operating model; owner to confirm every line is true before go-live. -->
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Everyday chemistry in 60 seconds</span>
+<h1>Ask <span class="hl">why</span>. Get the real answer.</h1>
+<p class="hero-ar" lang="ar" dir="rtl">اسأل <span class="hl">ليش</span>… وخذ الجواب الصحيح.</p>
+<p class="lead">Short videos that answer one everyday “why” with real chemistry. Written and fact-checked by a working lab chemist, narrated by an AI voice, with every claim sourced.</p>
+<div class="btns">
+<a class="btn primary" href="https://www.youtube.com/@layshlab" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg><span>YouTube</span></a>
+<a class="btn" href="https://www.instagram.com/layshlab/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg><span>Instagram</span></a>
+<a class="btn" href="https://www.tiktok.com/@layshlab" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h3a4 4 0 0 0 4 4v3a7 7 0 0 1-4-1.3V15a6 6 0 1 1-6-6v3.2A2.8 2.8 0 1 0 14 15z"/></svg><span>TikTok</span></a>
+</div>
+</div>
+<img class="hero-mark" src="/logo-mark.png" alt="Laysh Lab logo: a lab flask with a question mark" width="180" height="180">
+</div>
+</section>
+
+<section id="en" class="story" aria-labelledby="story-en">
+<div class="wrap">
+<span class="eyebrow">Our story</span>
+<h2 id="story-en">Why “Laysh”?</h2>
+<blockquote><span lang="ar" dir="rtl">ليش</span> (laysh) is how we say “why?” in Gulf Arabic.</blockquote>
+<p>As kids we all asked it. Somewhere along the way we stopped, or the answers we found online were only half true.</p>
+<p>Laysh Lab is made by a working analytical chemist who spends the day measuring things nobody can see, like the sulfur compounds that give cooking gas its smell. The world is full of invisible chemistry like that: in your kitchen, your phone, your food and the air you breathe.</p>
+<p>So each video takes one everyday “why” and answers it in about a minute, with the sources listed, so you never have to take our word for it.</p>
+</div>
+</section>
+
+<section aria-labelledby="what-en">
+<div class="wrap">
+<span class="eyebrow">What we do</span>
+<h2 id="what-en">One question. One real answer.</h2>
+<div class="grid three">
+<div class="card"><span class="num">1</span><h3>About 60 seconds</h3><p>One question per video, no filler, and the title question is answered inside the video.</p></div>
+<div class="card"><span class="num">2</span><h3>Every claim sourced</h3><p>Sources are listed under each video and on our <a href="/sources.html">Sources page</a>. Mistakes get a public correction.</p></div>
+<div class="card"><span class="num">3</span><h3>English voice, Arabic captions</h3><p>Every video comes with Arabic captions, so Arabic speakers get the same science.</p></div>
+<div class="card"><span class="num">4</span><h3>Safety first</h3><p>No dangerous experiments. Where it matters, we give a practical safety takeaway, like what to do if you smell gas.</p></div>
+<div class="card"><span class="num">5</span><h3>AI voice, honest about it</h3><p>Narration is generated with an AI voice (ElevenLabs). Scripts are written and fact-checked by a working lab chemist.</p></div>
+<div class="card"><span class="num">6</span><h3>Ask Laysh</h3><p>Comment your own “why?” under any video. We pick viewer questions for future episodes and credit the asker.</p></div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="videos-en">
+<div class="wrap">
+<span class="eyebrow">Latest videos</span>
+<h2 id="videos-en">Episodes and their sources</h2>
+<ul class="vlist"><li><span><span class="vid">YT-A</span> <a href="/sources.html#gas-smell">Your kitchen gas has no smell. So what are you smelling?</a></span><span class="date">22 Oct 2026</span></li><li><span><span class="vid">YT-B</span> <a href="/sources.html#ice">Ice should sink. It doesn’t. Here’s why</a></span><span class="date">24 Oct 2026</span></li><li><span><span class="vid">YT-C</span> <a href="/sources.html#silver">Silver doesn’t rust. So why does it turn black?</a></span><span class="date">26 Oct 2026</span></li><li><span><span class="vid">YT-D</span> <a href="/sources.html#apple">That brown apple isn’t rotting</a></span><span class="date">28 Oct 2026</span></li><li><span><span class="vid">YT-E</span> <a href="/sources.html#glow-sticks">No battery. Almost no heat. So why does it glow?</a></span><span class="date">29 Oct 2026</span></li></ul>
+<p class="muted" style="margin-top:14px">Dates are when each video goes public on YouTube. See <a href="/sources.html">all sources and our correction policy</a>.</p>
+</div>
+</section>
+
+<section id="ar" lang="ar" dir="rtl" aria-labelledby="story-ar">
+<div class="wrap story">
+<span class="eyebrow">قصتنا</span>
+<h2 id="story-ar">لماذا «ليش»؟</h2>
+<blockquote>«ليش؟» سؤال سألناه كلّنا ونحن صغار.</blockquote>
+<p>ثم توقّفنا عن طرحه في مكانٍ ما، أو وجدنا على الإنترنت إجاباتٍ نصفها فقط صحيح.</p>
+<p>يقدّم «ليش لاب» كيميائيٌّ تحليلي يعمل في مختبر حقيقي، ويقضي يومه في قياس أشياء لا تراها العين، مثل مركّبات الكبريت التي تمنح غاز الطبخ رائحته. والعالم مليء بكيمياء خفيّة مثلها: في مطبخك وهاتفك وطعامك والهواء الذي تتنفّسه.</p>
+<p>في كل فيديو نأخذ سؤال «ليش» واحدًا من حياتك اليومية ونجيب عنه في نحو دقيقة، مع ذكر المصادر، حتى لا تضطر إلى الأخذ بكلامنا دون دليل.</p>
+
+<h2 style="margin-top:1.4em">ماذا نقدّم؟</h2>
+<div class="grid three">
+<div class="card"><span class="num">١</span><h3>نحو 60 ثانية</h3><p>سؤال واحد في كل فيديو، بلا حشو، والجواب داخل الفيديو نفسه.</p></div>
+<div class="card"><span class="num">٢</span><h3>لكل معلومة مصدر</h3><p>المصادر مذكورة تحت كل فيديو وفي <a href="/sources.html">صفحة المصادر</a>، وأي خطأ نصحّحه علنًا.</p></div>
+<div class="card"><span class="num">٣</span><h3>صوت إنجليزي وترجمة عربية</h3><p>كل فيديو مترجم إلى العربية، ليصل العلم نفسه إلى المتحدثين بالعربية.</p></div>
+<div class="card"><span class="num">٤</span><h3>السلامة أولًا</h3><p>لا تجارب خطرة. وحيث يلزم نقدّم نصيحة سلامة عملية، مثل ما تفعله إذا شممت رائحة غاز.</p></div>
+<div class="card"><span class="num">٥</span><h3>صوت بالذكاء الاصطناعي، بكل وضوح</h3><p>التعليق الصوتي مُولَّد بالذكاء الاصطناعي (ElevenLabs)، والنصوص يكتبها ويدقّقها كيميائي يعمل في مختبر.</p></div>
+<div class="card"><span class="num">٦</span><h3>اسأل ليش</h3><p>اكتب سؤالك «ليش؟» في تعليق تحت أي فيديو. نختار أسئلة المشاهدين لحلقات قادمة ونذكر اسم صاحب السؤال.</p></div>
+</div>
+
+<h2 style="margin-top:1.4em">أحدث الفيديوهات</h2>
+<ul class="vlist"><li><span><a href="/sources.html#gas-smell">غاز مطبخك بلا رائحة. فما الذي تشمّه إذن؟</a></span><span class="date">22 أكتوبر 2026</span></li><li><span><a href="/sources.html#ice">الجليد يُفترض أن يغوص… لكنه يطفو. إليك السبب</a></span><span class="date">24 أكتوبر 2026</span></li><li><span><a href="/sources.html#silver">الفضة لا تصدأ. فلماذا تسودّ؟</a></span><span class="date">26 أكتوبر 2026</span></li><li><span><a href="/sources.html#apple">التفاحة البنية ليست متعفّنة</a></span><span class="date">28 أكتوبر 2026</span></li><li><span><a href="/sources.html#glow-sticks">بلا بطارية وبلا حرارة تقريبًا… فلماذا تتوهّج؟</a></span><span class="date">29 أكتوبر 2026</span></li></ul>
+
+<h2 style="margin-top:1.4em">تابعنا</h2>
+<p>ابحث عن <bdi dir="ltr">@layshlab</bdi> على يوتيوب وإنستغرام وتيك توك.</p>
+<div class="btns">
+<a class="btn primary" href="https://www.youtube.com/@layshlab" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg><span>يوتيوب</span></a>
+<a class="btn" href="https://www.instagram.com/layshlab/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg><span>إنستغرام</span></a>
+<a class="btn" href="https://www.tiktok.com/@layshlab" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h3a4 4 0 0 0 4 4v3a7 7 0 0 1-4-1.3V15a6 6 0 1 1-6-6v3.2A2.8 2.8 0 1 0 14 15z"/></svg><span>تيك توك</span></a>
+</div>
+<p class="muted" style="margin-top:18px">روابط مهمة: <a href="/sources.html">المصادر وسياسة التصحيح</a> · <a href="/privacy.html">سياسة الخصوصية</a> · <a href="/terms.html">شروط الاستخدام</a></p>
+</div>
+</section>
+
+<section aria-labelledby="links-en">
+<div class="wrap">
+<span class="eyebrow">Follow and read more</span>
+<h2 id="links-en">Find us as <span class="hl">@layshlab</span></h2>
+<div class="btns">
+<a class="btn primary" href="https://www.youtube.com/@layshlab" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg><span>YouTube</span></a>
+<a class="btn" href="https://www.instagram.com/layshlab/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg><span>Instagram</span></a>
+<a class="btn" href="https://www.tiktok.com/@layshlab" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h3a4 4 0 0 0 4 4v3a7 7 0 0 1-4-1.3V15a6 6 0 1 1-6-6v3.2A2.8 2.8 0 1 0 14 15z"/></svg><span>TikTok</span></a>
+</div>
+<div class="grid three" style="margin-top:22px">
+<a class="card" href="/sources.html" style="text-decoration:none"><h3 style="color:var(--link)">Sources →</h3><p>Every episode’s references and our public correction policy.</p></a>
+<a class="card" href="/privacy.html" style="text-decoration:none"><h3 style="color:var(--link)">Privacy Policy →</h3><p>This site uses no cookies and no analytics.</p></a>
+<a class="card" href="/terms.html" style="text-decoration:none"><h3 style="color:var(--link)">Terms of Service →</h3><p>Educational content only. Never try hazardous experiments.</p></a>
+</div>
+<p class="muted" style="margin-top:18px">Questions or a correction? Email <a href="mailto:layshlab@outlook.com">layshlab@outlook.com</a>.</p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<nav class="foot-links" aria-label="Footer">
+<a href="/">Home</a><a href="/sources.html">Sources</a><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a><a href="mailto:layshlab@outlook.com">layshlab@outlook.com</a>
+</nav>
+<p>Narrated by an AI voice · written and fact-checked by a working lab chemist · every claim sourced.</p>
+<p lang="ar" dir="rtl">بصوت مُولَّد بالذكاء الاصطناعي · كتابة وتدقيق كيميائي يعمل في مختبر · ولكل معلومة مصدر.</p>
+<p>© 2026 Laysh Lab. Educational content only, not professional or safety advice.</p>
+</div>
+</footer>
+</body>
+</html>
